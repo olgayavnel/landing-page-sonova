@@ -14,7 +14,12 @@ const Button = styled.button`
   color: #fff;
   font-size: 0.9rem;
   font-weight: 700;
-  width: 395px;
+  width: 25rem;
+
+  @media screen and (max-width: 900px) {
+    font-size: 0.7rem;
+    width: 20rem;
+  }
 `;
 
 export default Button;

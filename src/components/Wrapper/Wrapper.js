@@ -12,11 +12,10 @@ const ContentWrap = styled.section`
   height: 100%;
   max-width: 1100px;
   padding: 1rem;
-  margin: 0 10rem;
+  margin: 0 auto;
   gap: 5rem;
   display: flex;
   flex-direction: column;
-  overflow-x: auto;
 `;
 
 function Wrapper() {

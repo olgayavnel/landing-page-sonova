@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const InfoWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 50%);
+  overflow-x: hidden;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

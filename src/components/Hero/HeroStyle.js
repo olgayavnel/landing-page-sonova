@@ -4,23 +4,24 @@ import heroimg from './../../assets/hero-image.jpeg';
 export const Section = styled.section`
   height: 100%;
   position: relative;
-`;
-
-export const HeroWrapper = styled.div`
-  width: 100%;
-  height: 500px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 500px;
-  /* justify-content: flex-end; */
-  /* align-items: center; */
-  position: relative;
   background-image: url(${heroimg});
   object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 3rem;
+`;
+
+export const HeroWrapper = styled.div`
+  width: 100%;
+  height: 500px;
+  max-width: 1100px;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 500px;
+  position: relative;
+  margin: 0 auto 4rem;
+  overflow: auto;
 `;
 
 // export const HeroImage = styled.img`
@@ -45,10 +46,10 @@ export const HeroContent = styled.div`
   justify-content: space-around;
   flex-direction: column;
   background-color: #f9f9f9;
+  width: 100%;
   max-width: 500px;
   height: 420px;
   padding: 2rem;
-  margin-right: 10%;
   align-items: center;
 
   h1 {
