@@ -4,6 +4,11 @@ export const UspWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 `;
 
 export const ColumnLeft = styled.div`
@@ -11,6 +16,10 @@ export const ColumnLeft = styled.div`
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem 0;
+
+  @media screen and (max-width: 600px) {
+    margin-bottom: 2rem;
+  }
 `;
 
 export const UspItem = styled.div`

@@ -24,17 +24,6 @@ export const HeroWrapper = styled.div`
   overflow: auto;
 `;
 
-// export const HeroImage = styled.img`
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   height: 100%;
-//   width: 100%;
-//   object-fit: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-// `;
-
 export const HeroContent = styled.div`
   position: relative;
   padding: 1rem;
@@ -63,6 +52,16 @@ export const HeroContent = styled.div`
     text-align: center;
     letter-spacing: 0.1rem;
     padding: 0 0.2rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+`;
+
+export const HeroContentSmall = styled.div`
+  @media screen and (min-width: 600px) {
+    display: none;
   }
 `;
 

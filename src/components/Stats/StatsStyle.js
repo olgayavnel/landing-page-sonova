@@ -15,6 +15,11 @@ export const StatsWrap = styled.div`
   grid-template-rows: repeat(2, 1fr);
   gap: 2rem 1rem;
   align-items: stretch;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
 `;
 
 export const StatsItem = styled.div`

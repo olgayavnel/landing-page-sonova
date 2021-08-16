@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import geersLogo from './../../assets/geersLogo.png';
 
 const Nav = styled.nav`
   height: 60px;
@@ -9,15 +10,17 @@ const Nav = styled.nav`
   padding: 1rem 2rem;
 `;
 
-const Logo = styled.div``;
-const Contact = styled.div``;
+const Logo = styled.img``;
+const Contact = styled.div`
+  color: #4aa724;
+`;
 
 function Navbar() {
   return (
     <Nav>
-      <Logo>GEERS</Logo>
+      <Logo src={geersLogo} />
       <Contact>
-        <p>030 1234 5678</p>
+        <h4>030 1234 5678</h4>
         <p>Mo-Sa 9-18 Uhr</p>
       </Contact>
     </Nav>
