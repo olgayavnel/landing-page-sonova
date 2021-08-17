@@ -16,13 +16,17 @@ import {
 } from './HeroStyle';
 
 function Hero() {
+  function onButtonClick() {
+    alert('POP UP!');
+  }
+
   return (
     <Section>
       <HeroWrapper>
         <ResponsiveHero />
         <HeroContent>
           <h1>Das richtige Hörgerät verbessert mehr als nur Ihr Hören.</h1>
-          <Button>
+          <Button onClick={onButtonClick}>
             <p>Jetzt Hörgeräte kostenlos testen</p>
           </Button>
           <Awards>

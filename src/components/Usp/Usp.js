@@ -12,6 +12,10 @@ import {
 } from './UspStyle';
 
 function Usp() {
+  function onButtonClick() {
+    alert('POP UP!');
+  }
+
   return (
     <UspWrapper>
       <ColumnLeft>
@@ -28,7 +32,7 @@ function Usp() {
             <Warranty key={index} src={warranty} />
           ))}
         </WarrantyWrap>
-        <Button>
+        <Button onClick={onButtonClick}>
           <p>Ja, ich will besser hören</p>
         </Button>
       </ColumnRight>

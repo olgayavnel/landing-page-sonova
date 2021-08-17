@@ -1,17 +1,15 @@
 import React from 'react';
 import Button from '../Button/Button';
-import styled from 'styled-components';
-
-const ButtonWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+import { ButtonWrapper } from './CTAStyles';
 
 function CTA() {
+  function onButtonClick() {
+    alert('POP UP!');
+  }
+
   return (
     <ButtonWrapper>
-      <Button>
+      <Button onClick={onButtonClick}>
         <p>Hörgeräte unverbindlich Probetragen</p>
       </Button>
     </ButtonWrapper>

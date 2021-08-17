@@ -14,6 +14,7 @@ const Button = styled.button`
   color: #fff;
   width: 100%;
   max-width: 436px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
   p {
     font-size: 1.2rem;
@@ -30,6 +31,10 @@ const Button = styled.button`
 
   @media screen and (max-width: 600px) {
     width: 320px;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
   }
 `;
 

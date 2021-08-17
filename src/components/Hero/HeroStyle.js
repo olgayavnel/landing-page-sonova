@@ -67,6 +67,7 @@ export const HeroContent = styled.div`
   height: 420px;
   padding: 2rem;
   align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   h1 {
     font-size: 2rem;
