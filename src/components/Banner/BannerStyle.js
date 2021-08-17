@@ -1,10 +1,27 @@
 import styled from 'styled-components';
+import banner from './../../assets/banner.jpeg';
+import bannerMobile from './../../assets/bannerMobile.jpeg';
 
 export const Section = styled.section`
   height: 50vh;
   max-height: 1100px;
-  margin: 4rem 0;
+  margin: 4rem 0 0;
   position: relative;
+  background-image: url(${banner});
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: 600px) {
+    background-image: url(${bannerMobile});
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 `;
 
 export const BannerWrapper = styled.div`
@@ -15,17 +32,10 @@ export const BannerWrapper = styled.div`
   align-items: flex-start;
   padding-top: 4rem;
   position: relative;
-`;
 
-export const FooterImage = styled.img`
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  @media screen and (max-width: 600px) {
+    padding-top: 1rem;
+  }
 `;
 
 export const BannerContent = styled.div`
@@ -34,13 +44,25 @@ export const BannerContent = styled.div`
   display: flex;
   margin-left: 4rem;
   color: #fff;
+  line-height: 1.9rem;
 
   h1 {
     text-align: left;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
   }
 
   h4 {
     text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-left: 0.5rem;
   }
 `;
 
@@ -51,4 +73,9 @@ export const TextWrap = styled.div`
   margin-left: 1rem;
 `;
 
-export const Icon = styled.img``;
+export const Icon = styled.img`
+  @media screen and (max-width: 600px) {
+    height: 100%;
+    width: 48px;
+  }
+`;

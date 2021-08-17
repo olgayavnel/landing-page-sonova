@@ -4,15 +4,23 @@ import styled from 'styled-components';
 const FooterWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  margin: 3rem;
+  padding: 3rem;
   gap: 1rem;
-  /* justify-content: center;
-  justify-items: center; */
   align-items: center;
+  background-color: #414141;
+  color: #fff;
+  text-decoration: none;
+
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
 `;
+
 const Links = styled.div`
   display: flex;
   gap: 1rem;
+  text-decoration: none;
 `;
 
 function Footer() {
@@ -22,7 +30,7 @@ function Footer() {
         <a href='/'>Impressum</a>
         <a href='/'>Datenshutz</a>
       </Links>
-      <p>Copyright 2020. All rights reserved.</p>
+      <p>Copyright © 2020. All rights reserved.</p>
     </FooterWrapper>
   );
 }
