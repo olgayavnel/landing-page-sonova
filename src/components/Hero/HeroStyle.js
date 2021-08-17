@@ -31,7 +31,7 @@ export const HeroWrapper = styled.div`
   @media screen and (max-width: 600px) {
     height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 420px;
+    grid-template-rows: 200px 340px;
     padding: 0;
     background-color: #f9f9f9;
     margin: 0 auto 2rem;

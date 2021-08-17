@@ -1,19 +1,18 @@
-import Navbar from './components/Navbar/Navbar';
+import { Switch, Route } from 'react-router-dom';
 import GlobalStyle from './globalStyle';
-import Hero from './components/Hero/Hero';
-import Wrapper from './components/Wrapper/Wrapper';
-import Banner from './components/Banner/Banner';
-import Footer from './components/Footer/Footer';
+import Copyright from './pages/Copyright';
+import Home from './pages/Home';
+import Impressum from './pages/Impressum';
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Navbar />
-      <Hero />
-      <Wrapper />
-      <Banner />
-      <Footer />
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/impressum' component={Impressum} />
+        <Route path='/copyright' component={Copyright} />
+      </Switch>
     </>
   );
 }

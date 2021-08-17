@@ -23,7 +23,7 @@ const Button = styled.button`
     font-weight: 500;
 
     @media screen and (max-width: 700px) {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       padding: 0;
     }
   }
