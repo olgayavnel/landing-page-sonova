@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import heroimg from './../../assets/hero-image.jpeg';
+import heroimgMobile from './../../assets/hero-image-mobile.jpeg';
 
 export const Section = styled.section`
   height: 100%;
@@ -9,6 +10,10 @@ export const Section = styled.section`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (max-width: 600px) {
+    background-image: none;
+  }
 `;
 
 export const HeroWrapper = styled.div`
@@ -21,7 +26,29 @@ export const HeroWrapper = styled.div`
   grid-template-rows: 500px;
   position: relative;
   margin: 0 auto 4rem;
-  overflow: auto;
+  overflow: hidden;
+
+  @media screen and (max-width: 600px) {
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 420px;
+    padding: 0;
+    background-color: #f9f9f9;
+    margin: 0 auto 2rem;
+  }
+`;
+
+export const ResponsiveHero = styled.div`
+  @media screen and (max-width: 600px) {
+    background-image: url(${heroimgMobile});
+    grid-row: 1/2;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 `;
 
 export const HeroContent = styled.div`
@@ -44,38 +71,43 @@ export const HeroContent = styled.div`
   h1 {
     font-size: 2rem;
     text-align: center;
-    line-height: 3rem;
-  }
+    line-height: 2.2rem;
 
-  p {
-    font-size: 1rem;
-    text-align: center;
-    letter-spacing: 0.1rem;
-    padding: 0 0.2rem;
+    @media screen and (max-width: 900px) {
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+    }
   }
 
   @media screen and (max-width: 600px) {
-    display: none;
-  }
-`;
-
-export const HeroContentSmall = styled.div`
-  @media screen and (min-width: 600px) {
-    display: none;
+    background-color: #f9f9f9;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    padding: 0 2rem;
+    justify-content: space-evenly;
+    height: 340px;
   }
 `;
 
 export const Awards = styled.div`
   display: flex;
-  max-width: 100%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+
+  @media screen and (max-width: 900px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const AwardIcon = styled.img`
   height: 60px;
   margin: 0 0.2rem;
+
+  @media screen and (max-width: 900px) {
+    height: 40px;
+  }
 `;
 
 export const AwardIconWrap = styled.div`

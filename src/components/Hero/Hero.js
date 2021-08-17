@@ -11,6 +11,7 @@ import {
   Awards,
   HeroContent,
   HeroWrapper,
+  ResponsiveHero,
   Section,
 } from './HeroStyle';
 
@@ -18,7 +19,7 @@ function Hero() {
   return (
     <Section>
       <HeroWrapper>
-        {/* <HeroImage src={heroimg} /> */}
+        <ResponsiveHero />
         <HeroContent>
           <h1>Das richtige Hörgerät verbessert mehr als nur Ihr Hören.</h1>
           <Button>

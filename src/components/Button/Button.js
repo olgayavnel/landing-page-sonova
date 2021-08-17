@@ -12,13 +12,24 @@ const Button = styled.button`
   align-items: center;
   padding: 1rem 0.5rem;
   color: #fff;
-  font-size: 0.9rem;
-  font-weight: 700;
-  width: 25rem;
+  width: 100%;
+  max-width: 436px;
 
-  @media screen and (max-width: 900px) {
-    font-size: 0.7rem;
-    width: 20rem;
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    padding: 0 0.2rem;
+    font-weight: 500;
+
+    @media screen and (max-width: 700px) {
+      font-size: 0.8rem;
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 320px;
   }
 `;
 

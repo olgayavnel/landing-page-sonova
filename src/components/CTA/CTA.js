@@ -6,12 +6,6 @@ const ButtonWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  p {
-    font-size: 1rem;
-    text-align: center;
-    padding: 0 0.2rem;
-  }
 `;
 
 function CTA() {

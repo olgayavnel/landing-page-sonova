@@ -7,7 +7,8 @@ export const UspWrapper = styled.div`
 
   @media screen and (max-width: 600px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    overflow: hidden;
   }
 `;
 
@@ -27,7 +28,14 @@ export const UspItem = styled.div`
   align-items: center;
 
   p {
-    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+
+    @media screen and (max-width: 600px) {
+      line-height: 2.1rem;
+      flex-wrap: wrap;
+    }
   }
 `;
 
@@ -40,6 +48,10 @@ export const ColumnRight = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    gap: 2rem;
+  }
 `;
 
 export const WarrantyWrap = styled.div`
@@ -51,4 +63,9 @@ export const WarrantyWrap = styled.div`
 export const Warranty = styled.img`
   width: 110px;
   height: 101px;
+
+  @media screen and (max-width: 600px) {
+    width: 84px;
+    height: 100%;
+  }
 `;
